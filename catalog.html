@@ -22,29 +22,29 @@
     <main>
       <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
       <aside>
-        <form class="left-filter" action="filter.php" method="post">
+        <form class="left-filter" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset>
             <legend>Стоимость</legend>
-            <input type="range" id="pricefrom" name="pricefrom" value="0" min="0" max="14899" step="1" onchange="valpricefrom.value = pricefrom.value">
-            <input type="range" id="pricebefore" name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value">
-            <label>от <input id="valpricefrom" type="text" /></label>
-            <label>до <input id="valpricebefore" type="text" /></label>
+            <input type="range"  name="pricefrom" value="0" min="0" max="14899" step="1" onchange="valpricefrom.value = pricefrom.value">
+            <input type="range"  name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value"><br>
+            <label>от <input name="valpricefrom" type="text" /></label>
+            <label>до <input name="valpricebefore" type="text" /></label>
           </fieldset>
           <fieldset>
             <legend>Сетка</legend>
-              <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
-              <label><input type="radio" name="grid" value="fixed">Фиксированная</label>
-              <label><input type="radio" name="grid" value="elastic">Резиновая</label>
+              <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
+              <label><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
+              <label><input type="radio" name="grid" value="elastic">Резиновая</label><br>
           </fieldset>
           <fieldset>
             <legend>Особенности</legend>
-              <label><input type="checkbox" name="slider" value="slider">Слайдер</label>
-              <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label>
-              <label><input type="checkbox" name="news" value="news">Новости</label>
-              <label><input type="checkbox" name="gallery" value="gallery">Галерея</label>
-              <label><input type="checkbox" name="cart" value="cart">Корзина</label>
-              <input type="button" name="show" value="Показать">
+              <label><input type="checkbox" name="slider" value="slider">Слайдер</label><br>
+              <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label><br>
+              <label><input type="checkbox" name="news" value="news">Новости</label><br>
+              <label><input type="checkbox" name="gallery" value="gallery">Галерея</label><br>
+              <label><input type="checkbox" name="cart" value="cart">Корзина</label><br>
           </fieldset>
+          <input type="submit" name="show" value="Показать">
         </form>
       </aside>
       <section>
@@ -141,6 +141,18 @@
           </p>
           <button type="button" name="writeus">Напишите нам</button>
         </div>
+      </section>
+      <section class="writeus-form">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <label for="yourname">Ваше имя:</label><br>
+          <input type="text" name="yourname-field" id="yourname" placeholder="Имя Фамилия"><br>
+          <label for="email">Ваш email:</label><br>
+          <input type="email" name="email-field" id="email" placeholder="email@example.com"><br>
+          <label for="message">Текст письма:</label><br>
+          <textarea name="message-textarea" id="message" placeholder="В свободной форме"></textarea><br>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
       <section>
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
