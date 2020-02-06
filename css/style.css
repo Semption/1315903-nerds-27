@@ -430,30 +430,6 @@ padding-bottom: 27px;
   display: block;
 }
 
-.small-divider-1 {
-  margin-left: 49px;
-  margin-right: 45px;
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
-}
-
-.small-divider-2 {
-  margin-left: 49px;
-  margin-right: 57px;
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
-}
-
-.small-divider-3 {
-  margin-left: 56px;
-  margin-right: 63px;
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
-}
-
 .map {
   padding-bottom: 69px;
 }
