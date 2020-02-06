@@ -1,3 +1,307 @@
 body {
+  margin: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #283136;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.nav  {
+  list-style: none;
+  text-transform: uppercase;
+  color: #eeeeee;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.nav a {
+  color: #283136;
+}
+
+.nav a:hover {
+  color: #fb565a;
+}
+
+.nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 160;
+  height: 65;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.cart::before {
+  content: url('../img/cart-icon.svg');
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding-right: 26px;
+  opacity: 0.3;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-list li:nth-child(1) {
+  background-image: url("../img/slide-picture-1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 698px;
+  height: 413px;
+}
+
+.slider-list li:nth-child(2) {
+  background-image: url("../img/slide-picture-2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 698px;
+  height: 413px;
+}
+
+.slider-list li:nth-child(3) {
+  background-image: url("../img/slide-picture-3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 698px;
+  height: 413px;
+}
+
+.text-slider-l {
+  font-size: 55px;
+  text-align: left;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.text-slider-s {
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.button-large {
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  height: 50px;
+  width: 240px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.button-middle {
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  height: 50px;
+  width: 160px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.button-red {
+  background-color: #fb565a;
+}
+
+.button-red:hover {
+  background-color: #e74246;
+}
+
+.button-red:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.dots {
+
+}
+
+.advantage-list {
+  list-style: none;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+
+}
+
+h3.advantage-header {
+  font-size: 24px;
+  color: #000000;
+  text-align: left;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.we {
+  padding-bottom: 77px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about-us {
+  padding-top: 80px;
+}
+
+.we-header {
+  font-size: 45px;
+  text-align: left;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.orders-dev {
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.efficiency {
+  padding-top: 40px;
+  background-image: url("../img/nerds-picture.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.efficiency-header {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.efficiency-number {
+  font-size: 45px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 10px;
+  color: #000000;
+}
+
+.efficiency-number td {
+padding-bottom: 27px;
+}
+
+.efficiency-value {
+  line-height: 18px;
+}
+
+.brands {
+  padding-top: 46px;
+  padding-bottom: 44px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.brand-items {
+  list-style: none;
+  display: block;
+}
+
+.small-divider-1 {
+  margin-left: 49px;
+  margin-right: 45px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.small-divider-2 {
+  margin-left: 49px;
+  margin-right: 57px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.small-divider-3 {
+  margin-left: 56px;
+  margin-right: 63px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
 }
