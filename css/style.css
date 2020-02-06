@@ -80,7 +80,16 @@ html {
   padding-right: 26px;
   opacity: 0.3;
 }
-
+.catalog-header {
+  font-size: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+  padding-top: 82px;
+  padding-bottom: 116px;
+}
 .slider {
   background-color: #eeeeee;
 }
@@ -197,8 +206,128 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-contacts {
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  height: 50px;
+  width: 219px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  color: #ffffff;
+  border: 0px solid transparent;
+  border-radius: 3px;
+  background-color: #fb565a;
+}
+
+
+.button-price {
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  height: 50px;
+  width: 200px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+
+.filter-label {
+  line-height: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 9px;
+}
+
+input[type="radio"] {
+  margin-right: 11px;
+}
+
+.template-info a.button-price.button-red {
+color: #ffffff;
+display: inline-block;
+}
+
 .dots {
 
+}
+
+.price-filter {
+  letter-spacing: 0.18px;
+}
+
+.sort-filter {
+  line-height: 18px;
+}
+
+.sort-variant {
+  list-style: none;
+}
+
+.sort-variant li {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.sort-variant li a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-variant li a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-variant li a:active {
+  color: rgba(0, 0, 0);
+}
+
+li.up a::before {
+  content: url("../img/icon-up-dir.svg");
+  width: 11px;
+  height: 10px;
+  opacity: 0.7;
+}
+
+li.down a::before {
+  content: url("../img/icon-down-dir.svg");
+  width: 10px;
+  height: 11px;
+  opacity: 0.7;
+}
+
+li.up a:hover {
+  opacity: 0.8;
+}
+
+li.up a:active {
+  opacity: 1;
+}
+
+li.down a:hover {
+  opacity: 0.8;
+}
+
+li.down a:active {
+  opacity: 1;
+}
+
+.filter-name {
+  font-size: 18px;
+  text-align: left;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .advantage-list {
@@ -207,6 +336,25 @@ html {
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 
+}
+
+.catalog-grid {
+  list-style: none;
+}
+
+.template-info {
+  text-align: center;
+  width: 360px;
+  height: 231px;
+  background-color: #eeeeee;
+  padding-top: 17px;
+}
+.template-info h3 a {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
 
 h3.advantage-header {
@@ -304,4 +452,86 @@ padding-bottom: 27px;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
+}
+
+.map {
+  padding-bottom: 69px;
+}
+.contacts {
+  width: 319px;
+  height: 308px;
+  background-color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts-header {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 54px;
+}
+
+.address {
+color: #666666;
+}
+
+.writeus-form {
+  display: none;
+}
+
+.social-items {
+  list-style: none;
+}
+
+.social-items li {
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  margin-right: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+}
+
+li.vk a::before {
+  content: url("../img/vk-icon.svg");
+  width: 26px;
+  height: 15px;
+  position: absolute;
+  padding-left: 26px;
+  padding-top: 32px;
+}
+
+li.facebook a::before {
+  content: url("../img/fb-icon.svg");
+  width: 12px;
+  height: 22px;
+  position: absolute;
+  padding-left: 32px;
+  padding-top: 28px;
+}
+
+li.instagram a::before {
+  content: url("../img/insta-icon.svg");
+  width: 26px;
+  height: 15px;
+  position: absolute;
+  padding-left: 29px;
+  padding-top: 29px;
+}
+
+.footer-text-l {
+  font-size: 36px;
+  text-align: left;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-text-sm {
+  line-height: 22px;
+  color: #444444;
 }

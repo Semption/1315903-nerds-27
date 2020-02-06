@@ -8,44 +8,44 @@
     <title>HTML Academy: Каталог шаблонов Нёрдс</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+    <header class="main-header">
+      <nav class="nav">
+        <a class="logo">
+          <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс">
         </a>
-        <ul>
+        <ul class="main-menu">
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="#">Корзина</a>
+        <a class="cart" href="#">Корзина</a>
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-header">Магазин готовых шаблонов</h1>
       <aside>
         <form class="left-filter" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset>
-            <legend>Стоимость</legend>
+            <legend class="filter-name price-filter">Стоимость:</legend>
             <input type="range"  name="pricefrom" value="0" min="0" max="14899" step="1" onchange="valpricefrom.value = pricefrom.value">
             <input type="range"  name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value"><br>
             <label>от <input name="valpricefrom" type="text" /></label>
             <label>до <input name="valpricebefore" type="text" /></label>
           </fieldset>
           <fieldset>
-            <legend>Сетка</legend>
-              <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
-              <label><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
-              <label><input type="radio" name="grid" value="elastic">Резиновая</label><br>
+            <legend class="filter-name">Сетка:</legend>
+              <label class="filter-label"><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
+              <label class="filter-label"><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
+              <label class="filter-label"><input type="radio" name="grid" value="elastic">Резиновая</label><br>
           </fieldset>
           <fieldset>
-            <legend>Особенности</legend>
-              <label><input type="checkbox" name="slider" value="slider">Слайдер</label><br>
-              <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label><br>
-              <label><input type="checkbox" name="news" value="news">Новости</label><br>
-              <label><input type="checkbox" name="gallery" value="gallery">Галерея</label><br>
-              <label><input type="checkbox" name="cart" value="cart">Корзина</label><br>
+            <legend class="filter-name">Особенности:</legend>
+              <label class="filter-label"><input type="checkbox" name="slider" value="slider">Слайдер</label><br>
+              <label class="filter-label"><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label><br>
+              <label class="filter-label"><input type="checkbox" name="news" value="news">Новости</label><br>
+              <label class="filter-label"><input type="checkbox" name="gallery" value="gallery">Галерея</label><br>
+              <label class="filter-label"><input type="checkbox" name="cart" value="cart">Корзина</label><br>
           </fieldset>
           <input type="submit" name="show" value="Показать">
         </form>
@@ -53,66 +53,66 @@
       <section>
         <h2 class="visually-hidden">Список шаблонов</h2>
         <div>
-          <p>
+          <p class="filter-name sort-filter">
             Сортировать:
           </p>
-          <ul>
+          <ul class="sort-variant">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
           </ul>
-          <ul>
-            <li><a href="#">Up</a></li>
-            <li><a href="#">Down</a></li>
+          <ul class="sort-variant">
+            <li class="up"><a href="#"></a></li>
+            <li class="down"><a href="#"></a></li>
           </ul>
         </div>
-        <ul>
+        <ul class="catalog-grid">
           <li>
             <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona"></a>
-            <div>
+            <div class="template-info">
               <h3><a href="#">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
-              <a href="#">9 900 руб.</a>
+              <a class="button-price button-red" href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
             <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink"></a>
-            <div>
+            <div class="template-info">
               <h3><a href="#">Pink</a></h3>
               <p>Приложение для настроения</p>
-              <a href="#">10 900 руб.</a>
+              <a class="button-price button-red" href="#">10 900 руб.</a>
             </div>
           </li>
           <li>
             <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Borodinski"></a>
-            <div>
+            <div class="template-info">
               <h3><a href="#">Borodinski</a></h3>
               <p>Знаменитый Барбершоп</p>
-              <a href="#">11 900 руб.</a>
+              <a class="button-price button-red" href="#">11 900 руб.</a>
             </div>
           </li>
           <li>
             <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka"></a>
-            <div>
+            <div class="template-info">
               <h3><a href="#">Mishka</a></h3>
               <p>Товары ручной работы</p>
-              <a href="#">12 900 руб.</a>
+              <a class="button-price button-red" href="#">12 900 руб.</a>
             </div>
           </li>
           <li>
             <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A плюс"></a>
-            <div>
+            <div class="template-info">
               <h3><a href="#">A+</a></h3>
               <p>Портал онлайн обучения</p>
-              <a href="#">13 900 руб.</a>
+              <a class="button-price button-red" href="#">13 900 руб.</a>
             </div>
           </li>
           <li>
             <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст"></a>
-            <div>
+            <div class="template-info">
               <h3><a href="#">Кваст</a></h3>
               <p>Производство кваса</p>
-              <a href="#">14 900 руб.</a>
+              <a class="button-price button-red" href="#">14 900 руб.</a>
             </div>
           </li>
         </ul>
@@ -127,22 +127,22 @@
       </section>
     </main>
     <footer>
-      <section>
+      <section class="map">
         <h2 class="visually-hidden">Карта расположения</h2>
         <img src="img/map.png" width="1440" height="416" alt="Карта расположения студии">
         <span><img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте"></span>
-        <div>
-          <p>
+        <div class="contacts">
+          <p class="contacts-header">
             NЁRDS DESIGN STUDIO
           </p>
-          <p>
+          <p class="address">
             191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>
+          <p class="address">
             тел. +7 (812) 275-75-75
           </p>
-          <button type="button" name="writeus">Напишите нам</button>
+          <input type="button" class="button-contacts button-red" value="Напишите нам"></input>
         </div>
       </section>
       <section class="writeus-form">
@@ -154,18 +154,22 @@
           <input type="email" name="email-field" id="email" placeholder="email@example.com"><br>
           <label for="message">Текст письма:</label><br>
           <textarea name="message-textarea" id="message" placeholder="В свободной форме"></textarea><br>
-          <button>Отправить</button>
+          <input type="button" class="button-contacts">Отправить</input>
         </form>
       </section>
       <section>
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul>
-          <li><a href="#" title="Студия в социальной сети Вконтакте">Вконтакте</a></li>
-          <li><a href="#" title="Студия в социальной сети Facebook">Facebook</a></li>
-          <li><a href="#" title="Студия в социальной сети Instagram">Instagram</a></li>
-        </ul>
-        <p class="text-large">Давайте дружить, это выгодно!</p>
-        <p class="text-small">Скидка 10% для друзей из социальных сетей.</p>
+        <div>
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <ul class="social-items">
+              <li class="vk"><a href="#" title="Студия в социальной сети Вконтакте"></a></li>
+              <li class="facebook"><a href="#" title="Студия в социальной сети Facebook"></a></li>
+              <li class="instagram"><a href="#" title="Студия в социальной сети Instagram"></a></li>
+            </ul>
+        </div>
+        <div>
+          <p class="footer-text-l">Давайте дружить, это выгодно!</p>
+          <p class="footer-text-sm">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   </body>
