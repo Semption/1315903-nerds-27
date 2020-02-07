@@ -60,8 +60,9 @@ html {
 }
 
 .logo {
-  width: 160;
-  height: 65;
+  width: 160px;
+  height: 65px;
+  display: block;
 }
 
 .logo:hover {
@@ -220,6 +221,7 @@ html {
   border: 0px solid transparent;
   border-radius: 3px;
   background-color: #fb565a;
+  cursor: pointer;
 }
 
 
@@ -366,6 +368,22 @@ h3.advantage-header {
   text-transform: uppercase;
 }
 
+h3.advantage-header a {
+  color: #000000;
+}
+
+ul.brand-items img {
+opacity: 0.5;
+}
+
+ul.brand-items img:hover {
+opacity: 1;
+}
+
+ul.brand-items img:active {
+opacity: 0.2;
+}
+
 .we {
   padding-bottom: 77px;
   border-bottom: 2px solid #eeeeee;
@@ -477,8 +495,8 @@ li.vk a::before {
   width: 26px;
   height: 15px;
   position: absolute;
-  padding-left: 26px;
-  padding-top: 32px;
+  left: 26px;
+  top: 32px;
 }
 
 li.facebook a::before {
@@ -486,8 +504,8 @@ li.facebook a::before {
   width: 12px;
   height: 22px;
   position: absolute;
-  padding-left: 32px;
-  padding-top: 28px;
+  left: 32px;
+  top: 28px;
 }
 
 li.instagram a::before {
@@ -495,8 +513,15 @@ li.instagram a::before {
   width: 26px;
   height: 15px;
   position: absolute;
-  padding-left: 29px;
-  padding-top: 29px;
+  left: 29px;
+  top: 29px;
+}
+
+.social-items li a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
 
 .footer-text-l {
