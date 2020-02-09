@@ -37,15 +37,44 @@ html {
 
 .main-header {
   background-color: #eeeeee;
+  width: 100%;
+  min-height: 114px;
+  outline: 2px dashed blue;
+  display: flex;
 }
 
-.nav  {
+.main-menu {
+  display: flex;
+  outline: 2px dashed Goldenrod;
+}
+
+.main-menu ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.main-menu ul li{
+  margin-right: 46px;
+}
+
+.main-menu ul li:last-child{
+  margin-right: 0;
+}
+
+.main-header .nav  {
   list-style: none;
   text-transform: uppercase;
   color: #eeeeee;
   font-weight: 500;
   line-height: 30px;
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+  align-items: flex-end;
+  outline: 2px dashed green;
+  margin: 0 auto;
 }
+
 
 .nav a {
   color: #283136;
@@ -59,10 +88,17 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.logo-wrapper {
+  display: flex;
+  outline: 2px dashed DeepPink;
+  margin-left: 140px;
+  margin-right: 202px;
+
+}
+
 .logo {
   width: 160px;
   height: 65px;
-  display: block;
 }
 
 .logo:hover {
@@ -71,6 +107,13 @@ html {
 
 .logo:active {
   opacity: 0.3;
+}
+
+.cart {
+  display: flex;
+  outline: 2px dashed Black;
+  margin-right: 140px;
+  margin-bottom: 16px;
 }
 
 .cart::before {
@@ -113,6 +156,7 @@ html {
   background-position: right;
   width: 698px;
   height: 413px;
+  display: none;
 }
 
 .slider-list li:nth-child(3) {
@@ -121,6 +165,7 @@ html {
   background-position: right;
   width: 698px;
   height: 413px;
+  display: none;
 }
 
 .text-slider-l {
@@ -332,12 +377,27 @@ li.down a:active {
   color: #000000;
 }
 
-.advantage-list {
-  list-style: none;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-bottom: 2px solid #eeeeee;
+.advantage-wrapper {
+  width: auto;
+  display: flex;
+  outline: 2px dashed red;
+  justify-content: center;
+}
 
+.advantage {
+display: flex;
+width: 1160px;
+outline: 2px dashed darkgreen;
+border-bottom: 2px solid #eeeeee;
+}
+
+.advantage-list {
+  display: flex;
+  list-style: none;
+}
+
+.advantage-list li {
+  margin-right: 100px;
 }
 
 .catalog-grid {
@@ -522,6 +582,20 @@ li.instagram a::before {
   width: 100px;
   height: 100px;
   position: relative;
+}
+
+.footer-bottom {
+  display: flex;
+  outline: 2px dashed darkblue;
+  width: auto;
+}
+
+.footer-container {
+  display: flex;
+  width: 1160px;
+  outline: 2px dashed red;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .footer-text-l {
