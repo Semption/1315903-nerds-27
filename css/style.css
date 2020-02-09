@@ -134,6 +134,35 @@ html {
   padding-top: 82px;
   padding-bottom: 116px;
 }
+
+.catalog-container {
+width: auto;
+display: flex;
+outline: 2px dashed red;
+}
+
+.catalog-wrapper {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+  outline: 2px dashed darkgreen;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  outline: 2px dashed black;
+  width: 380px;
+}
+
+.right-panel {
+  display: flex;
+  margin: 0;
+  outline: 2px dashed darkblue;
+
+}
+
+
 .slider {
   background-color: #eeeeee;
 }
