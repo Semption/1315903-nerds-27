@@ -432,25 +432,26 @@ li.down a:active {
   color: #000000;
 }
 
-.advantage-wrapper {
-  width: auto;
-  display: flex;
-  justify-content: center;
-}
-
 .advantage {
-display: flex;
 width: 1160px;
 border-bottom: 2px solid #eeeeee;
+margin: 0 auto;
 }
 
 .advantage-list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  margin: 80px 0px;
+
 }
 
 .advantage-list li {
   margin-right: 100px;
+}
+
+.advantage-list li:last-child {
+  margin-right: 0;
 }
 
 .catalog-grid {
