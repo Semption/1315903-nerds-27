@@ -137,20 +137,17 @@ html {
   width: 1160px;
   display: flex;
   margin: 0 auto;
-  outline: 2px dashed darkgreen;
 }
 
 .catalog-wrapper {
   display: flex;
   width: auto;
-  outline: 2px dashed red;
 }
 
 .catalog-item {
   display: flex;
   width: 360px;
   height: 616px;
-  outline: 2px dashed black;
   margin-right: 40px;
   margin-bottom: 33px;
   align-items: flex-end;
@@ -163,7 +160,6 @@ html {
 .left-panel {
   display: flex;
   flex-direction: column;
-  outline: 2px dashed black;
   width: 380px;
 }
 
@@ -172,7 +168,6 @@ html {
   flex-direction: column;
   width: 760px;
   margin: 0;
-  outline: 2px dashed darkblue;
 
 }
 
@@ -181,7 +176,6 @@ html {
   padding: 0;
   display: flex;
   width: 760px;
-  outline: 2px dashed orange;
 }
 
 
@@ -431,14 +425,12 @@ li.down a:active {
 .advantage-wrapper {
   width: auto;
   display: flex;
-  outline: 2px dashed red;
   justify-content: center;
 }
 
 .advantage {
 display: flex;
 width: 1160px;
-outline: 2px dashed darkgreen;
 border-bottom: 2px solid #eeeeee;
 }
 
@@ -661,14 +653,12 @@ li.instagram a::before {
 
 .footer-bottom {
   display: flex;
-  outline: 2px dashed darkblue;
   width: auto;
 }
 
 .footer-container {
   display: flex;
   width: 1160px;
-  outline: 2px dashed red;
   justify-content: space-around;
   margin: 0 auto;
 }
