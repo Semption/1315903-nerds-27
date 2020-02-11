@@ -22,7 +22,7 @@
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-         </div>
+        </div>
          <div class="cart">
           <a href="#">Корзина</a>
         </div>
@@ -35,20 +35,20 @@
       <div class="catalog-container">
         <aside class="left-panel">
               <form class="left-filter" action="https://echo.htmlacademy.ru/courses" method="post">
-                <fieldset>
+                <fieldset class="fieldset-filter price">
                   <legend class="filter-name price-filter">Стоимость:</legend>
                   <input type="range"  name="pricefrom" value="0" min="0" max="14899" step="1" onchange="valpricefrom.value = pricefrom.value">
                   <input type="range"  name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value"><br>
-                  <label>от <input name="valpricefrom" type="text" /></label>
-                  <label>до <input name="valpricebefore" type="text" /></label>
+                  <label>от<input name="valpricefrom" type="text" /></label>
+                  <label>до<input name="valpricebefore" type="text" /></label>
                 </fieldset>
-                <fieldset>
-                  <legend class="filter-name">Сетка:</legend>
+                <fieldset class="fieldset-filter grid">
+                  <legend class="filter-name grid-filter">Сетка:</legend>
                     <label class="filter-label"><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
                     <label class="filter-label"><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
                     <label class="filter-label"><input type="radio" name="grid" value="elastic">Резиновая</label><br>
                 </fieldset>
-                <fieldset>
+                <fieldset class="fieldset-filter features">
                   <legend class="filter-name">Особенности:</legend>
                     <label class="filter-label"><input type="checkbox" name="slider" value="slider">Слайдер</label><br>
                     <label class="filter-label"><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label><br>
@@ -56,7 +56,7 @@
                     <label class="filter-label"><input type="checkbox" name="gallery" value="gallery">Галерея</label><br>
                     <label class="filter-label"><input type="checkbox" name="cart" value="cart">Корзина</label><br>
                 </fieldset>
-                <input type="submit" name="show" value="Показать">
+                <input type="submit" class="button-filter button-grey"name="show" value="Показать">
               </form>
             </aside>
         <section class="right-panel">
@@ -65,12 +65,12 @@
                 <p class="filter-name sort-filter">
                   Сортировать:
                 </p>
-                <ul class="sort-variant">
+                <ul class="sort-variant parameters">
                   <li><a href="#">По цене</a></li>
                   <li><a href="#">По типу</a></li>
                   <li><a href="#">По названию</a></li>
                 </ul>
-                <ul class="sort-variant">
+                <ul class="sort-variant up-down">
                   <li class="up"><a href="#"></a></li>
                   <li class="down"><a href="#"></a></li>
                 </ul>
@@ -78,7 +78,12 @@
             <div class="template-list">
                 <ul class="catalog-grid">
                   <li class="catalog-item">
+                    <div class="head-cat-item">
+                      <img src="img/browser.svg" width="360" height="40">
+                    </div>
+                    <div class="image-cat-item">
                     <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona"></a>
+                    </div>
                     <div class="template-info">
                       <h3><a href="#">Sedona</a></h3>
                       <p>Информационный сайт для туристов</p>
@@ -86,7 +91,12 @@
                     </div>
                   </li>
                   <li class="catalog-item">
+                    <div class="head-cat-item">
+                      <img src="img/browser.svg" width="360" height="40">
+                    </div>
+                    <div class="image-cat-item">
                     <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink"></a>
+                    </div>
                     <div class="template-info">
                       <h3><a href="#">Pink</a></h3>
                       <p>Приложение для настроения</p>
@@ -94,7 +104,12 @@
                     </div>
                   </li>
                   <li class="catalog-item">
+                    <div class="head-cat-item">
+                      <img src="img/browser.svg" width="360" height="40">
+                    </div>
+                    <div class="image-cat-item">
                     <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Borodinski"></a>
+                    </div>
                     <div class="template-info">
                       <h3><a href="#">Borodinski</a></h3>
                       <p>Знаменитый Барбершоп</p>
@@ -102,7 +117,12 @@
                     </div>
                   </li>
                   <li class="catalog-item">
+                    <div class="head-cat-item">
+                      <img src="img/browser.svg" width="360" height="40">
+                    </div>
+                    <div class="image-cat-item">
                     <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka"></a>
+                    </div>
                     <div class="template-info">
                       <h3><a href="#">Mishka</a></h3>
                       <p>Товары ручной работы</p>
@@ -110,7 +130,12 @@
                     </div>
                   </li>
                   <li class="catalog-item">
+                    <div class="head-cat-item">
+                      <img src="img/browser.svg" width="360" height="40">
+                    </div>
+                    <div class="image-cat-item">
                     <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A плюс"></a>
+                    </div>
                     <div class="template-info">
                       <h3><a href="#">A+</a></h3>
                       <p>Портал онлайн обучения</p>
@@ -118,7 +143,12 @@
                     </div>
                   </li>
                   <li class="catalog-item">
+                    <div class="head-cat-item">
+                      <img src="img/browser.svg" width="360" height="40">
+                    </div>
+                    <div class="image-cat-item">
                     <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст"></a>
+                    </div>
                     <div class="template-info">
                       <h3><a href="#">Кваст</a></h3>
                       <p>Производство кваса</p>
@@ -141,20 +171,26 @@
     <footer>
       <section class="map">
         <h2 class="visually-hidden">Карта расположения</h2>
-        <img src="img/map.png" width="1440" height="416" alt="Карта расположения студии">
-        <span><img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте"></span>
-        <div class="contacts">
-          <p class="contacts-header">
-            NЁRDS DESIGN STUDIO
-          </p>
-          <p class="address">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="address">
-            тел. +7 (812) 275-75-75
-          </p>
-          <input type="button" class="button-contacts button-red" value="Напишите нам">
+        <div class="map-wrapper">
+          <img src="img/map.png" width="1440" height="416" alt="Карта расположения студии">
+        </div>
+        <div class="marker-wrapper">
+          <span><img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте"></span>
+        </div>
+        <div class="contacts-wrapper">
+          <div class="contacts">
+            <p class="contacts-header">
+              NЁRDS DESIGN STUDIO
+            </p>
+            <p class="address">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="address">
+              тел. +7 (812) 275-75-75
+            </p>
+            <input type="button" class="button-contacts button-red" value="Напишите нам">
+          </div>
         </div>
       </section>
       <section class="writeus-form">
