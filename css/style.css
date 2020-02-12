@@ -46,18 +46,23 @@ html {
 
 .main-menu {
   display: flex;
+  width: 481px;
 }
 
 .main-menu ul {
   display: flex;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   width: 440px;
   justify-content: space-between;
+  min-height: 39px;
 }
 
-.main-menu ul li{
-
+.main-menu ul li:nth-child(2n) {
+  padding-right: 1px;
+  text-align: right;
 }
+
 
 .main-menu ul li:last-child{
   margin-right: 0;
@@ -75,7 +80,7 @@ html {
   align-items: flex-end;
   margin: 0 auto;
   margin-top: 49px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 
@@ -110,7 +115,7 @@ html {
 
 .cart {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .cart::before {
@@ -230,12 +235,14 @@ p.text-slider-l {
   font-weight: 500;
   color: #000000;
   margin-bottom: 28px;
-  padding-top: 67px;
+  padding-top: 60px;
 }
 
 p.text-slider-s {
   text-align: left;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
+  margin-top: -1px;
+  margin-left: 1px;
 }
 
 .slider-list {
@@ -249,7 +256,7 @@ p.text-slider-s {
 .slider-list li:nth-child(1) {
   background-image: url("../img/slide-picture-1.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 431px;
   height: 413px;
 }
 
@@ -655,11 +662,11 @@ align-items: center;
  list-style: none;
  padding: 0;
  margin: 0;
- margin-top: 30px;
+ margin-top: 24px;
 }
 
 .line-items li {
- margin-top: 22px;
+ margin-top: 24px;
 }
 
 ul.line-items li::before {
@@ -696,6 +703,21 @@ h3.advantage-header {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-top: 18px;
+}
+
+.advantage-list p {
+  padding: 0;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 30px;
+}
+
+.advantage-list img {
+  padding: 0;
+  margin: 0;
 }
 
 h3.advantage-header a {
@@ -715,7 +737,7 @@ opacity: 0.2;
 }
 
 .we {
-  padding-bottom: 77px;
+  padding-bottom: 72px;
   border-bottom: 2px solid #eeeeee;
   display: flex;
   width: 1160px;
@@ -723,7 +745,7 @@ opacity: 0.2;
 }
 
 .about-us {
-  padding-top: 80px;
+  padding-top: 75px;
   width: 780px;
 }
 
@@ -741,7 +763,7 @@ opacity: 0.2;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 47px;
+  margin-top: 38px;
 
 }
 
@@ -753,21 +775,33 @@ opacity: 0.2;
 .efficiency {
   width: 380px;
   background-image: url("../img/nerds-picture.jpg");
-  background-position-y: 40px;
+  background-position-y: 41px;
+  background-position-x: 20px;
   background-repeat: no-repeat;
   background-size: auto;
   margin: 0;
-  padding-top: 289px;
+  padding-top: 285px;
 }
 
 .efficiency-table {
-  margin-top: 49px;
+  margin-top: 56px;
+  padding-left: 17px;
+}
+
+.efficiency-number sup {
+  font-size: 65%;
 }
 
 .efficiency-header {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.efficiency p {
+  margin: 0;
+  padding: 0;
+  padding-left: 22px;
 }
 
 .efficiency-number {
@@ -779,8 +813,12 @@ opacity: 0.2;
 }
 
 .efficiency-number td {
-padding-bottom: 27px;
+padding-bottom: 32px;
 padding-right: 15px;
+}
+
+.efficiency-value td {
+  padding-left: 2px;
 }
 
 .efficiency-number td:last-child {
@@ -794,7 +832,7 @@ padding-right: 0;
 .brands {
   width: 1160px;
   padding-top: 46px;
-  padding-bottom: 44px;
+  padding-bottom: 37px;
   border-bottom: 2px solid #eeeeee;
   margin: 0 auto;
 }
@@ -830,7 +868,7 @@ padding-right: 0;
 .marker-wrapper {
   position: relative;
   z-index: 1;
-  top: 87px;
+  top: 89px;
   left: 820px;
 }
 
@@ -842,24 +880,43 @@ padding-right: 0;
   padding-right: 50px;
 }
 
+
+.contacts p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .contacts-wrapper {
   position: relative;
   z-index: 3;
-  top: -160px;
+  top: -142px;
   left: 140px;
 }
 
-.contacts-header {
+.contacts .contacts-header {
   font-size: 18px;
   line-height: 30px;
   text-align: left;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 54px;
+  padding-top: 49px;
 }
 
-.address {
-color: #666666;
+.contacts .address {
+  color: #666666;
+  padding-left: 1px;
+  padding-top: 23px;
+}
+
+.contacts .telephone {
+  padding-top: 18px;
+  padding-left: 1px;
+}
+
+.contacts input[type="button"] {
+  margin-top: 36px;
 }
 
 .writeus-form {
@@ -879,8 +936,13 @@ color: #666666;
   margin-right: 12px;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 10px;
   margin-left: 0;
+  margin-top: 5px;
+}
+
+.social-items li:nth-child(2) {
+  margin-right: 7px;
 }
 
 li.vk a::before {
@@ -965,3 +1027,18 @@ li.instagram a::before {
   line-height: 22px;
   color: #444444;
 }
+
+  p.footer-text-sm, p.footer-text-l  {
+    margin: 0;
+    padding: 0;
+  }
+
+  p.footer-text-sm {
+  margin-top: 10px;
+  margin-left: 2px;
+  }
+
+  p.footer-text-l  {
+    margin-left: 2px;
+    margin-top: -2px;
+  }
