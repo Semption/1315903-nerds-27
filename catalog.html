@@ -38,23 +38,50 @@
                 <fieldset class="fieldset-filter price">
                   <legend class="filter-name price-filter">Стоимость:</legend>
                   <input type="range"  name="pricefrom" value="0" min="0" max="14899" step="1" onchange="valpricefrom.value = pricefrom.value">
-                  <input type="range"  name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value"><br>
+                  <input type="range"  name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value">
                   <label>от<input name="valpricefrom" type="text" /></label>
                   <label>до<input name="valpricebefore" type="text" /></label>
                 </fieldset>
                 <fieldset class="fieldset-filter grid">
                   <legend class="filter-name grid-filter">Сетка:</legend>
-                    <label class="filter-label"><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
-                    <label class="filter-label"><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
-                    <label class="filter-label"><input type="radio" name="grid" value="elastic">Резиновая</label><br>
+                    <ul class="grid-list">
+                      <li>
+                        <input class="visually-hidden radio-grid" type="radio" id="adaptive-radio" name="grid" value="adaptive" checked>
+                        <label for="adaptive-radio" class="filter-label">Адаптивная</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden radio-grid" type="radio" id="fixed-radio" name="grid" value="fixed">
+                        <label for="fixed-radio" class="filter-label">Фиксированная</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden radio-grid" type="radio" id="elastic-radio" name="grid" value="elastic">
+                        <label for="elastic-radio" class="filter-label">Резиновая</label>
+                      </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="fieldset-filter features">
-                  <legend class="filter-name">Особенности:</legend>
-                    <label class="filter-label"><input type="checkbox" name="slider" value="slider">Слайдер</label><br>
-                    <label class="filter-label"><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label><br>
-                    <label class="filter-label"><input type="checkbox" name="news" value="news">Новости</label><br>
-                    <label class="filter-label"><input type="checkbox" name="gallery" value="gallery">Галерея</label><br>
-                    <label class="filter-label"><input type="checkbox" name="cart" value="cart">Корзина</label><br>
+                  <legend class="filter-name features">Особенности:</legend>
+                    <ul class="features-list">
+                      <li>
+                        <input class="visually-hidden checkbox-features" type="checkbox" id="slider-checkbox" name="slider" value="slider">
+                        <label for="slider-checkbox" class="filter-label">Слайдер</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden checkbox-features" type="checkbox" id="block-f-checkbox" name="advantage" value="advantage">
+                        <label for="block-f-checkbox"class="filter-label">Блок преимуществ</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden checkbox-features" type="checkbox" id="news-checkbox" name="news" value="news">
+                        <label for="news-checkbox" class="filter-label">Новости</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden checkbox-features" type="checkbox" id="gallery-checkbox" name="gallery" value="gallery">
+                        <label for="gallery-checkbox" class="filter-label">Галерея</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden checkbox-features" type="checkbox" id="cart-checkbox" name="cart" value="cart">
+                        <label for="cart-checkbox" class="filter-label">Корзина</label>
+                      </li>
                 </fieldset>
                 <input type="submit" class="button-filter button-grey" name="show" value="Показать">
               </form>
@@ -77,7 +104,7 @@
               </div>
             <div class="template-list">
                 <ul class="catalog-grid">
-                  <li class="catalog-item">
+                  <li class="catalog-item item-1">
                     <div class="head-cat-item">
                     </div>
                     <div class="image-cat-item">
@@ -89,7 +116,7 @@
                       <a class="button-price button-red" href="#">9 900 руб.</a>
                     </div>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-item item-2">
                     <div class="head-cat-item">
                     </div>
                     <div class="image-cat-item">
@@ -101,7 +128,7 @@
                       <a class="button-price button-red" href="#">10 900 руб.</a>
                     </div>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-item item-3">
                     <div class="head-cat-item">
                     </div>
                     <div class="image-cat-item">
@@ -113,7 +140,7 @@
                       <a class="button-price button-red" href="#">11 900 руб.</a>
                     </div>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-item item-4">
                     <div class="head-cat-item">
                     </div>
                     <div class="image-cat-item">
@@ -125,7 +152,7 @@
                       <a class="button-price button-red" href="#">12 900 руб.</a>
                     </div>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-item item-5">
                     <div class="head-cat-item">
                     </div>
                     <div class="image-cat-item">
@@ -137,7 +164,7 @@
                       <a class="button-price button-red" href="#">13 900 руб.</a>
                     </div>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-item item-6">
                     <div class="head-cat-item">
                     </div>
                     <div class="image-cat-item">
