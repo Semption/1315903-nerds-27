@@ -55,7 +55,13 @@ html {
   margin: 0;
   width: 440px;
   justify-content: space-between;
-  min-height: 39px;
+  min-height: 29px;
+  margin-bottom: 7px;
+}
+
+
+.main-menu li.active {
+    border-bottom: 2px solid #fb565a;
 }
 
 .main-menu ul li:nth-child(2n) {
@@ -935,6 +941,14 @@ p.template-desc {
   color: #000000;
 }
 
+.template-info h3 a:hover {
+ color: #fb565a;
+}
+
+.template-info h3 a:active {
+ color: rgba(0, 0, 0, 0.3);
+}
+
 .template-info a.button-price.button-red  {
   margin-top: 29px;
 }
@@ -979,6 +993,12 @@ ul.brand-items img:active {
 opacity: 0.2;
 }
 
+
+.brand-items li {
+    display: flex;
+    align-items: center;
+}
+
 .we {
   padding-bottom: 72px;
   border-bottom: 2px solid #eeeeee;
@@ -999,6 +1019,7 @@ opacity: 0.2;
   font-weight: 500;
   color: #000000;
   margin: 0;
+  letter-spacing: 0.12px
 }
 
 .orders-dev {
@@ -1007,7 +1028,7 @@ opacity: 0.2;
   text-transform: uppercase;
   margin: 0;
   margin-top: 38px;
-
+  letter-spacing: 0.1px;
 }
 
 .about-us .about-us-content {
@@ -1057,7 +1078,7 @@ opacity: 0.2;
 
 .efficiency-number td {
 padding-bottom: 32px;
-padding-right: 15px;
+padding-right: 16px;
 }
 
 .efficiency-value td {
@@ -1066,6 +1087,7 @@ padding-right: 15px;
 
 .efficiency-number td:last-child {
 padding-right: 0;
+padding-left: 3px
 }
 
 .efficiency-value {
@@ -1074,8 +1096,6 @@ padding-right: 0;
 
 .brands {
   width: 1160px;
-  padding-top: 46px;
-  padding-bottom: 37px;
   border-bottom: 2px solid #eeeeee;
   margin: 0 auto;
 }
@@ -1083,18 +1103,55 @@ padding-right: 0;
 .brand-items {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
   padding: 0;
+  margin-right: 12px;
 }
 
-.brand-items li::after {
+.brand-items li:not(:last-child)::after {
   content: "";
   width: 2px;
   height: 52px;
-  align-items: center;
   background-color: #eeeeee;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
+
+.brand-items li:nth-child(1) {
+
+}
+
+
+.brand-items li a {
+margin-top: 9px;
+}
+
+.brand-items li:first-child a {
+margin-top: 18px;
+}
+
+.brand-items li:last-child a {
+margin-top: 15px;
+}
+
+
+.brand-items li:nth-child(1)::after {
+  margin-left: 49px;
+  margin-right: 45px;
+}
+
+.brand-items li:nth-child(2)::after {
+  margin-left: 44px;
+  margin-right: 57px;
+}
+
+.brand-items li:nth-child(3)::after {
+  margin-left: 56px;
+  margin-right: 63px;
+}
+
+
 
 .map {
   width: 1440px;
