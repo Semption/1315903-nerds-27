@@ -35,12 +35,24 @@
       <div class="catalog-container">
         <aside class="left-panel">
               <form class="left-filter" action="https://echo.htmlacademy.ru/courses" method="post">
-                <fieldset class="fieldset-filter price">
+                <fieldset class="fieldset-filter filter-item">
                   <legend class="filter-name price-filter">Стоимость:</legend>
-                  <input type="range"  name="pricefrom" value="0" min="0" max="14899" step="1" onchange="valpricefrom.value = pricefrom.value">
-                  <input type="range"  name="pricebefore" value="14900" min="0" max="14900" step="1" onchange="valpricebefore.value = pricebefore.value">
-                  <label>от<input name="valpricefrom" type="text" /></label>
-                  <label>до<input name="valpricebefore" type="text" /></label>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar">
+
+                        </div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                      <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                    </div>
+                  </div>
+
                 </fieldset>
                 <fieldset class="fieldset-filter grid">
                   <legend class="filter-name grid-filter">Сетка:</legend>
