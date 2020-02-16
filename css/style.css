@@ -1236,6 +1236,8 @@ margin-top: 15px;
 }
 
 .contacts-wrapper {
+  width: 319px;
+  height: 308px;
   position: relative;
   z-index: 3;
   top: -142px;
