@@ -413,7 +413,7 @@ p.text-slider-s {
   overflow: hidden;
   display: block;
   height: 50px;
-  width: 219px;
+  width: 260px;
   padding-top: 19px;
   padding-bottom: 18px;
   color: #ffffff;
@@ -1361,7 +1361,6 @@ li.instagram a::before {
 
 .footer-text-l {
   font-size: 36px;
-  letter-spacing: 0.2px;
   text-align: left;
   line-height: 36px;
   font-weight: 700;
@@ -1402,7 +1401,7 @@ li.instagram a::before {
   position: absolute;
   left: 25%;
   top: -137px;
-  padding: 73px 90px 84px 100px;
+  padding: 67px 95px 84px 95px;
   }
 
   .popup-form h2 {
@@ -1413,7 +1412,10 @@ li.instagram a::before {
     text-align: left;
     color: #000000;
     display: inline-block;
-    margin-bottom: 49px;
+  }
+
+  .form-header {
+    margin-bottom: 31px;
   }
 
   .left-form-col {
@@ -1448,8 +1450,8 @@ li.instagram a::before {
 }
 
 .second-row {
-    margin-top: 36px;
-    margin-bottom: 47px;
+    margin-top: 45px;
+    margin-bottom: 41px;
 }
 
 .form-field label {
@@ -1458,13 +1460,19 @@ li.instagram a::before {
     text-align: left;
     font-weight: 700;
     color: #000000;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    display: block;
 }
 
 .form-field input[type="text"],input[type="email"],textarea {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   padding: 15px;
-  margin-top: 12px;
+}
+
+.form-field {
+  width: calc(100% - 10px);
 }
 
 .close-button {
@@ -1473,6 +1481,7 @@ li.instagram a::before {
   background: url("../img/close-cross.svg") no-repeat;
   display: inline-block;
   float: right;
+  margin-top: 10px;
 }
 
 .close-button a {
