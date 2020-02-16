@@ -413,7 +413,7 @@ p.text-slider-s {
   overflow: hidden;
   display: block;
   height: 50px;
-  width: 260px;
+  width: 219px;
   padding-top: 19px;
   padding-bottom: 18px;
   color: #ffffff;
@@ -1473,6 +1473,10 @@ li.instagram a::before {
 
 .form-field {
   width: calc(100% - 10px);
+}
+
+.popup {
+  width: 260px;
 }
 
 .close-button {
