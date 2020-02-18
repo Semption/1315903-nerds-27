@@ -199,79 +199,38 @@ html {
   width: 760px;
 }
 
-ul.catalog-grid li.catalog-item .head-cat-item {
+.catalog-grid .catalog-item .head-cat-item {
   opacity: 0.1;
   position: relative;
   z-index: 1;
 }
 
-ul.catalog-grid li.catalog-item  {
+.catalog-grid .catalog-item  {
   position: relative;
   z-index: 1;
 }
 
-ul.catalog-grid li.catalog-item .template-info {
+.catalog-grid .catalog-item .template-info {
   display: block;
   position: absolute;
   z-index: 2;
   top: 385px;
 }
 
-ul.catalog-grid li.catalog-item .template-info {
+.catalog-grid .catalog-item .template-info {
   display: none;
   position: absolute;
   z-index: 2;
   top: 385px;
 }
 
-.catalog-item.item-1:hover .head-cat-item, .template-info {
+.catalog-item.template:hover .head-cat-item {
   opacity: 1;
 }
 
-.catalog-item.item-1:hover .template-info {
+.catalog-item.template:hover .template-info {
   display: block;
 }
-
-.catalog-item.item-2:hover .head-cat-item, .template-info {
-  opacity: 1;
-}
-
-.catalog-item.item-2:hover .template-info {
-  display: block;
-}
-
-.catalog-item.item-3:hover .head-cat-item, .template-info {
-  opacity: 1;
-}
-
-.catalog-item.item-3:hover .template-info {
-  display: block;
-}
-
-.catalog-item.item-4:hover .head-cat-item, .template-info {
-  opacity: 1;
-}
-
-.catalog-item.item-4:hover .template-info {
-  display: block;
-}
-
-.catalog-item.item-5:hover .head-cat-item, .template-info {
-  opacity: 1;
-}
-
-.catalog-item.item-5:hover .template-info {
-  display: block;
-}
-
-.catalog-item.item-6:hover .head-cat-item, .template-info {
-  opacity: 1;
-}
-
-.catalog-item.item-6:hover .template-info {
-  display: block;
-}
-
 
 .slider {
   background-color: #eeeeee;
@@ -516,6 +475,7 @@ p.text-slider-s {
 
 .filter-label {
   line-height: 20px;
+  cursor: pointer;
 }
 
 .filter-item legend {
