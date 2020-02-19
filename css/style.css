@@ -260,6 +260,8 @@ p.text-slider-s {
   margin-left: 1px;
 }
 
+
+
 .slider-list {
   list-style: none;
   margin: 0;
@@ -268,18 +270,29 @@ p.text-slider-s {
   margin: 0 auto;
 }
 
+.slider-controls label {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-left: 14px;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .slider-list li:nth-child(1) {
   background-image: url("../img/slide-picture-1.png");
   background-repeat: no-repeat;
   background-position-x: 431px;
   height: 413px;
+  display: none;
 }
 
 .slider-list li:nth-child(2) {
   background-image: url("../img/slide-picture-2.png");
   background-repeat: no-repeat;
   background-position: right;
-  width: 698px;
   height: 413px;
   display: none;
 }
@@ -288,7 +301,6 @@ p.text-slider-s {
   background-image: url("../img/slide-picture-3.png");
   background-repeat: no-repeat;
   background-position: right;
-  width: 698px;
   height: 413px;
   display: none;
 }
@@ -302,19 +314,13 @@ p.text-slider-s {
 }
 
 .dots-list {
+  width: 116px;
+  position: absolute;
+  left: 46.9%;
+  top: 72.5%;
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
-}
-
-.dots-list li {
-  width: 18px;
-  height: 18px;
-  margin-left: 14px;
-  background-color: #ffffff;
-  display: inline-block;
-  border-radius: 50%;
 }
 
 .dots-link {
@@ -327,12 +333,24 @@ p.text-slider-s {
   width: 8px;
   height: 8px;
   border: 2px solid #c1c1c1;
-  display: block;
+  display: none;
   background-color: #ffffff;
   border-radius: 50%;
   position: absolute;
-  left: 19px;
+  left: 5px;
   top: 5px;
+}
+
+#banner-1:checked ~ .slider-controls label[for="banner-1"] .dots-circle,
+#banner-2:checked ~ .slider-controls label[for="banner-2"] .dots-circle,
+#banner-3:checked ~ .slider-controls label[for="banner-3"] .dots-circle {
+  display: block;
+}
+
+#banner-1:checked ~ .slider-list #slide-1,
+#banner-2:checked ~ .slider-list #slide-2,
+#banner-3:checked ~ .slider-list #slide-3 {
+  display: block;
 }
 
 .button-large {
