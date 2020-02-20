@@ -998,7 +998,7 @@ h3.advantage-header a {
 }
 
 ul.brand-items img {
-opacity: 0.5;
+opacity: 0.2;
 }
 
 ul.brand-items img:hover {
@@ -1006,7 +1006,7 @@ opacity: 1;
 }
 
 ul.brand-items img:active {
-opacity: 0.2;
+opacity: 0.1;
 }
 
 
@@ -1218,7 +1218,7 @@ margin-top: 15px;
   height: 308px;
   position: relative;
   z-index: 3;
-  top: -142px;
+  top: -136px;
   left: 140px;
 }
 
