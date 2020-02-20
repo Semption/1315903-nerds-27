@@ -1384,6 +1384,10 @@ li.instagram a::before {
   padding: 67px 95px 84px 95px;
   }
 
+  .popup-show {
+    display: block;
+  }
+
   .popup-form h2 {
     margin: 0;
     padding: 0;
