@@ -24,7 +24,6 @@ html {
   box-sizing: inherit;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -45,18 +44,24 @@ html {
 }
 
 .main-menu {
-  display: flex;
   width: 481px;
 }
 
 .main-menu ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  width: 440px;
-  justify-content: space-between;
+  width: 481px;
+  justify-content: flex-start;
   min-height: 29px;
   margin-bottom: 7px;
+  list-style: none;
+}
+
+.main-menu li {
+  margin-right: 47px;
+
 }
 
 
@@ -91,6 +96,7 @@ html {
 
 
 .nav a {
+  word-break: break-all;
   color: #283136;
 }
 
@@ -120,8 +126,15 @@ html {
 }
 
 .cart {
+  width: 200px;
+  min-height: 39px;
   display: flex;
-  margin-bottom: 9px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cart a {
+word-break: break-all;
 }
 
 .cart::before {
@@ -235,7 +248,9 @@ html {
 .slider {
   background-color: #eeeeee;
   width: auto;
+  min-height: 413px;
   position: relative;
+  overflow: auto;
 }
 
 .slider-list p {
@@ -251,6 +266,8 @@ p.text-slider-l {
   color: #000000;
   margin-bottom: 28px;
   padding-top: 60px;
+  width: 100%;
+  word-break: break-all;
 }
 
 p.text-slider-s {
@@ -258,13 +275,12 @@ p.text-slider-s {
   margin-bottom: 37px;
   margin-top: -1px;
   margin-left: 1px;
+  width: 45%;
+  word-break: break-all;
 }
-
-
 
 .slider-list {
   list-style: none;
-  margin: 0;
   padding: 0;
   width: 1160px;
   margin: 0 auto;
@@ -359,13 +375,16 @@ p.text-slider-s {
   text-align: center;
   overflow: hidden;
   display: inline-block;
-  height: 50px;
+  min-height: 50px;
   width: 240px;
-  padding-top: 19px;
-  padding-bottom: 18px;
   color: #ffffff;
   border-radius: 3px;
   font-weight: 400;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-wrap: break-word;
 }
 
 .button-middle {
@@ -374,13 +393,16 @@ p.text-slider-s {
   text-align: center;
   overflow: hidden;
   display: block;
-  height: 50px;
+  min-height: 50px;
   width: 160px;
-  padding-top: 19px;
-  padding-bottom: 18px;
   color: #ffffff;
   border-radius: 3px;
   font-weight: 400;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-wrap: break-word;
 }
 
 .button-contacts {
@@ -389,16 +411,19 @@ p.text-slider-s {
   text-align: center;
   overflow: hidden;
   display: block;
-  height: 50px;
+  min-height: 50px;
   width: 219px;
   padding-top: 19px;
   padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #ffffff;
   border: 0px solid transparent;
   border-radius: 3px;
   background-color: #fb565a;
   cursor: pointer;
   font-weight: 400;
+  word-wrap: break-word;
 }
 
 .button-price {
@@ -407,13 +432,16 @@ p.text-slider-s {
   text-align: center;
   overflow: hidden;
   display: block;
-  height: 50px;
+  min-height: 50px;
   width: 200px;
   padding-top: 19px;
   padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #ffffff;
   border-radius: 3px;
   font-weight: 400;
+  word-wrap: break-word;
 }
 
 .button-filter {
@@ -422,16 +450,19 @@ p.text-slider-s {
   text-align: center;
   overflow: hidden;
   display: block;
-  height: 50px;
+  min-height: 50px;
   width: 260px;
   padding-top: 19px;
   padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #000000;
   border: 0px solid transparent;
   border-radius: 3px;
   background-color: #eeeeee;
   cursor: pointer;
   font-weight: 500;
+  word-wrap: break-word;
 }
 
 .button-red {
@@ -658,7 +689,7 @@ padding-left: 30px;
 }
 
 .radio-grid + label::before {
-  content: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="rgb(77, 77, 77)" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>');
+  content: url('../img/radio-off.svg');
   position: absolute;
   width: 25px;
   height: 25px;
@@ -667,7 +698,7 @@ padding-left: 30px;
 }
 
 .radio-grid:checked + label::before {
-  content: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="rgb(77, 77, 77)" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="rgb(77, 77, 77)" cx="12.5" cy="12.5" r="4.5"/></svg>');
+  content: url('../img/radio-on.svg');
   position: absolute;
   width: 25px;
   height: 25px;
@@ -688,7 +719,7 @@ padding-left: 30px;
 }
 
 .checkbox-features + label::before {
-  content: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="rgb(77, 77, 77)" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>');
+  content: url('../img/checkbox-off.svg');
   position: absolute;
   width: 23px;
   height: 23px;
@@ -697,7 +728,7 @@ padding-left: 30px;
 }
 
 .checkbox-features:checked + label::before {
-  content: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="rgb(77, 77, 77)" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="rgb(77, 77, 77)" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>');
+  content: url('../img/checkbox-on.svg');
   position: absolute;
   width: 27px;
   height: 23px;
@@ -747,11 +778,11 @@ padding-left: 30px;
 }
 
 .sort-variant li a:active {
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .sort-variant li.active-point a {
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .up.active-point a::before {
@@ -805,18 +836,20 @@ margin: 0 auto;
 
 .advantage-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
-  margin: 80px 0px;
+  margin: 60px 0px 80px 0;
   padding: 0;
 
 }
 
 .advantage-list li {
+  margin-top: 20px;
   margin-right: 100px;
 }
 
-.advantage-list li:last-child {
+.advantage-list li:nth-child(3n) {
   margin-right: 58px;
 }
 
@@ -1075,6 +1108,7 @@ opacity: 0.1;
 .efficiency-table {
   margin-top: 56px;
   padding-left: 17px;
+  word-break: break-all
 }
 
 .efficiency-number sup {
@@ -1102,8 +1136,9 @@ opacity: 0.1;
 }
 
 .efficiency-number td {
-padding-bottom: 32px;
-padding-right: 16px;
+  width: 117px;
+  padding-bottom: 32px;
+  padding-right: 16px;
 }
 
 .efficiency-value td {
@@ -1128,13 +1163,14 @@ padding-left: 3px
 .brand-items {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 0;
   margin-right: 12px;
 }
 
-.brand-items li:not(:last-child)::after {
+.brand-items li:not(:nth-child(4n))::after {
   content: "";
   width: 2px;
   height: 52px;
@@ -1143,46 +1179,39 @@ padding-left: 3px
   margin-bottom: 64px;
 }
 
-.brand-items li:nth-child(1) {
-
-}
-
-
 .brand-items li a {
 margin-top: 9px;
 }
 
-.brand-items li:first-child a {
+.brand-items li:nth-child(4n-3) a {
 margin-top: 18px;
 }
 
-.brand-items li:last-child a {
+.brand-items li:nth-child(4n) a {
 margin-top: 15px;
 }
 
-
-.brand-items li:nth-child(1)::after {
+.brand-items li:nth-child(4n-3)::after {
   margin-left: 49px;
   margin-right: 45px;
 }
 
-.brand-items li:nth-child(2)::after {
+.brand-items li:nth-child(4n-2)::after {
   margin-left: 44px;
   margin-right: 57px;
 }
 
-.brand-items li:nth-child(3)::after {
+.brand-items li:nth-child(4n-1)::after {
   margin-left: 56px;
   margin-right: 63px;
 }
-
-
 
 .map {
   width: 1440px;
   height: 416px;
   margin: 0 auto;
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .map-contacts {
@@ -1212,7 +1241,7 @@ margin-top: 15px;
 
 .contacts {
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   background-color: #ffffff;
   padding-left: 50px;
   padding-right: 50px;
@@ -1224,11 +1253,12 @@ margin-top: 15px;
   padding: 0;
   font-size: 16px;
   line-height: 18px;
+  word-break: break-all;
 }
 
 .contacts-wrapper {
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   position: relative;
   z-index: 3;
   top: -136px;
@@ -1254,6 +1284,11 @@ margin-top: 15px;
   color: #666666;
   padding-top: 18px;
   padding-left: 1px;
+}
+
+.telephone a {
+  color: #666666;
+  text-decoration: none;
 }
 
 .contacts input[type="button"] {
@@ -1315,8 +1350,8 @@ li.facebook a::before {
 
 li.instagram a::before {
   content: url("../img/insta-icon.svg");
-  width: 26px;
-  height: 15px;
+  width: 21px;
+  height: 21px;
   position: absolute;
   left: 29px;
   top: 29px;
@@ -1349,7 +1384,11 @@ li.instagram a::before {
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
-  min-height: 217px;
+  min-height: 177px;
+}
+
+.footer-text {
+  width: 762px;
 }
 
 .footer-text-l {
@@ -1388,7 +1427,7 @@ li.instagram a::before {
   display: none;
   margin: 0 auto;
   width: 960px;
-  height: 590px;
+  min-height: 590px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
   position: fixed;
