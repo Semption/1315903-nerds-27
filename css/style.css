@@ -750,33 +750,41 @@ padding-left: 30px;
   color: rgba(0, 0, 0);
 }
 
-li.up a::before {
+.sort-variant li.active-point a {
+  color: rgba(0, 0, 0);
+}
+
+.up.active-point a::before {
+  opacity: 1;
+}
+
+.up a::before {
   content: url("../img/icon-down-dir.svg");
   width: 11px;
   height: 10px;
   opacity: 0.2;
 }
 
-li.down a::before {
+.down a::before {
   content: url("../img/icon-up-dir.svg");
   width: 10px;
   height: 11px;
   opacity: 0.2;
 }
 
-li.up a:hover::before {
+.up a:hover::before {
   opacity: 0.8;
 }
 
-li.up a:active::before {
+.up a:active::before {
   opacity: 1;
 }
 
-li.down a:hover::before {
+.down a:hover::before {
   opacity: 0.8;
 }
 
-li.down a:active::before {
+.down a:active::before {
   opacity: 1;
 }
 
@@ -873,6 +881,7 @@ padding-right: 18px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  cursor: pointer;
 
 }
 
@@ -1378,9 +1387,9 @@ li.instagram a::before {
   height: 590px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   left: 25%;
-  top: -137px;
+  top: 200px;
   padding: 67px 95px 84px 95px;
   }
 
