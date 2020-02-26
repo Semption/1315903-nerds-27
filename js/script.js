@@ -1,6 +1,6 @@
 var contactButton = document.querySelector('.contacts input[type="button"]');
 var form = document.querySelector('.popup-form');
-var closeButton = document.querySelector('.close-button a');
+var closeButton = document.querySelector('.close-button input');
 
 contactButton.addEventListener("click", function (evt) {
   evt.preventDefault();
