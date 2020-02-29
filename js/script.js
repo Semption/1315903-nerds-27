@@ -1,6 +1,6 @@
 var contactButton = document.querySelector('.contacts input[type="button"]');
 var form = document.querySelector('.popup-form');
-var closeButton = document.querySelector('.close-button input');
+var closeButton = document.querySelector('.close-button button');
 var yournameField = form.querySelector('input#yourname');
 var emailField = form.querySelector('input#email');
 var messageField = form.querySelector('textarea#message');
@@ -17,6 +17,15 @@ closeButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   form.classList.remove("popup-show");
 });
+
+window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     if (form.classList.contains("popup-show")) {
+       form.classList.remove("popup-show");
+     }
+   }
+ });
 
 sendButton.addEventListener("click", function (evt) {
 if (yournameField.value.length <= 0 || emailField.value.length <= 0 || messageField.value.length <= 0) {

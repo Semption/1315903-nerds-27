@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <nav class="nav">
          <div class="logo-wrapper">
           <a href="index.html" class="logo">
-            <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
           </a>
          </div>
          <div class="main-menu">
@@ -32,9 +32,9 @@
      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <section class="slider">
         <h2 class="visually-hidden">Обратите внимание</h2>
-        <input class="visually-hidden" type="radio" name="toggle" id="banner-1" checked>
-        <input class="visually-hidden" type="radio" name="toggle" id="banner-2">
-        <input class="visually-hidden" type="radio" name="toggle" id="banner-3">
+        <input class="visually-hidden" type="radio" name="toggle" id="banner-1" aria-label="1 слайд" checked>
+        <input class="visually-hidden" type="radio" name="toggle" id="banner-2" aria-label="2 слайд">
+        <input class="visually-hidden" type="radio" name="toggle" id="banner-3" aria-label="3 слайд">
         <div class="slider-controls dots-list">
           <label for="banner-1"><span class="dots-circle"></span></label>
           <label for="banner-2"><span class="dots-circle"></span></label>
@@ -131,10 +131,10 @@
       <section class="brands">
         <h2 class="visually-hidden">Представленные бренды</h2>
         <ul class="brand-items">
-          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/htmlacdemy-logo-hover.png" alt="" width="199" height="68"></a></li>
-          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/borodinsli-logo-hover.png" alt="" width="209" height="90"></a></li>
-          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/pink-logo-hover.png" alt="" width="185" height="52"></a></li>
-          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/mishka-logo-hover.png" alt="" width="173" height="84"></a></li>
+          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/htmlacdemy-logo-hover.png" alt="Логотип htmlacdemy" width="199" height="68"></a></li>
+          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/borodinsli-logo-hover.png" alt="Логотип барбершоп Бородинский" width="209" height="90"></a></li>
+          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/pink-logo-hover.png" alt="Логотип компании Pink" width="185" height="52"></a></li>
+          <li><a href="https://htmlacademy.ru/" target="_blank"><img src="img/mishka-logo-hover.png" alt="Логотип сайта Mishka" width="173" height="84"></a></li>
         </ul>
       </section>
     </main>
@@ -143,7 +143,7 @@
         <div class="popup-form">
           <div class="form-header">
             <h2>Напишите нам</h2>
-            <div class="close-button"> <input type="button" name="close-button" aria-label="Кнопка закрытия формы"> </div>
+            <div class="close-button"><button type="button" name="close-button" aria-label="Кнопка закрытия формы"></button></div>
           </div>
           <div class="form-field">
             <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -209,6 +209,6 @@
         </div>
       </section>
     </footer>
-    <script async src="js/script.js"></script>
+    <script async src="js/script.min.js"></script>
   </body>
 </html>
