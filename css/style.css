@@ -221,17 +221,10 @@ word-break: break-all;
 }
 
 .catalog-grid .catalog-item .template-info {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  top: 385px;
-}
-
-.catalog-grid .catalog-item .template-info {
   display: none;
   position: absolute;
   z-index: 2;
-  top: 385px;
+  bottom: 0;
 }
 
 .catalog-item.template:hover .head-cat-item {
@@ -971,7 +964,7 @@ margin-right: 11px;
 .template-info {
   text-align: center;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   background-color: #eeeeee;
   padding-top: 27px;
   display: none;
@@ -1009,6 +1002,7 @@ p.template-desc {
 
 .template-info a.button-price.button-red  {
   margin-top: 29px;
+  margin-bottom: 15px
 }
 
 h3.advantage-header {
@@ -1542,7 +1536,7 @@ p.footer-text-l  {
   width: calc(100% - 10px);
 }
 
-.popup {
+.send {
   width: 260px;
 }
 
@@ -1560,7 +1554,9 @@ p.footer-text-l  {
   background-color: #ffffff;
   background: url("../img/close-cross.svg") no-repeat;
   border: 0;
+  cursor: pointer;
 }
 
-.test {
+.empty, input[type="text"].empty, input[type="email"].empty {
+  border: 2px dashed #fb565a;
 }
