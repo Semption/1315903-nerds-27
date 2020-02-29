@@ -355,12 +355,6 @@ p.text-slider-s {
   display: block;
 }
 
-#banner-1:focus:checked ~ .slider-controls label[for="banner-1"] .dots-circle,
-#banner-2:focus:checked ~ .slider-controls label[for="banner-2"] .dots-circle,
-#banner-3:focus:checked ~ .slider-controls label[for="banner-3"] .dots-circle {
-  box-shadow: 0 0 0 4px #739bf7;
-}
-
 #banner-1:checked ~ .slider-list #slide-1,
 #banner-2:checked ~ .slider-list #slide-2,
 #banner-3:checked ~ .slider-list #slide-3 {
