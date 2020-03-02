@@ -1,4 +1,4 @@
-var contactButton = document.querySelector('.contacts input[type="button"]');
+var contactButton = document.querySelector('.contacts .button-contacts.button-red');
 var form = document.querySelector('.popup-form');
 var closeButton = document.querySelector('.close-button button');
 var yournameField = form.querySelector('input#yourname');

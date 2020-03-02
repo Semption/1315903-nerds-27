@@ -1424,7 +1424,7 @@ ul.line-items li::before {
   text-decoration: none;
 }
 
-.contacts input[type="button"] {
+.contacts .button-contacts.button-red {
   margin-top: 36px;
 }
 
