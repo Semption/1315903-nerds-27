@@ -66,10 +66,10 @@ html {
 }
 
 .main-menu li.active {
-    border-bottom: 2px solid #fb565a;
+  border-bottom: 2px solid #fb565a;
 }
 
-.main-menu ul li:last-child{
+.main-menu li:last-child{
   margin-right: 0;
 }
 
@@ -221,18 +221,12 @@ html {
   width: 760px;
 }
 
-.catalog-grid .catalog-item .head-cat-item {
-  opacity: 0.1;
-  position: relative;
-  z-index: 1;
-}
-
 .catalog-grid .catalog-item  {
   position: relative;
   z-index: 1;
 }
 
-.catalog-grid .catalog-item .template-info {
+.catalog-item .template-info {
   display: none;
   position: absolute;
   z-index: 2;
@@ -253,7 +247,7 @@ html {
   opacity: 1;
 }
 
-.catalog-item.template:hover .template-info {
+.template:hover .template-info {
   display: block;
   width: 360px;
 }
@@ -648,7 +642,7 @@ html {
   margin-right: 11px;
 }
 
-.template-info a.button-price.button-red {
+.template-info a.button-price {
   color: #ffffff;
   display: inline-block;
   vertical-align: middle;
@@ -681,13 +675,13 @@ html {
   margin-bottom: 17px;
 }
 
-.fieldset-filter.grid label {
+.grid label {
   content: "";
   padding-bottom: 10px;
   padding-left: 30px;
 }
 
-.fieldset-filter.features label {
+.features label {
   content: "";
   padding-bottom: 10px;
   padding-left: 30px;
@@ -699,7 +693,8 @@ html {
   list-style: none;
 }
 
-.grid-list li, .features-list li {
+.grid-list li,
+.features-list li {
   padding-bottom: 16px;
   position: relative;
   padding-left: 7px;
@@ -825,36 +820,20 @@ html {
   display: inline;
 }
 
-.sort-variant li a {
+.sort-variant a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-variant li a:hover {
+.sort-variant a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sort-variant li a:active {
+.sort-variant a:active {
   color: rgb(0, 0, 0);
 }
 
-.sort-variant li.active-point a {
+.active-point a {
   color: rgb(0, 0, 0);
-}
-
-.sort-variant:focus li a:focus {
-  box-shadow: 0 0 0 4px #739bf7;
-}
-
-.sort-variant:focus li a:hover {
-  box-shadow: 0 0 0 4px #739bf7;
-}
-
-.sort-variant:focus li a:active {
-  box-shadow: 0 0 0 4px #739bf7;
-}
-
-.sort-variant:focus li.active-point a {
-  box-shadow: 0 0 0 4px #739bf7;
 }
 
 .up.active-point a::before {
@@ -1027,7 +1006,7 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pages li a {
+.pages a {
   color: #000000;
 }
 
@@ -1093,7 +1072,7 @@ ul.line-items li::before {
  color: rgba(0, 0, 0, 0.3);
 }
 
-.template-info a.button-price.button-red  {
+.template-info a.button-price  {
   margin-top: 29px;
   margin-bottom: 15px
 }
@@ -1424,7 +1403,7 @@ ul.line-items li::before {
   text-decoration: none;
 }
 
-.contacts .button-contacts.button-red {
+.contacts .button-contacts {
   margin-top: 36px;
 }
 
@@ -1460,16 +1439,22 @@ ul.line-items li::before {
   top: 32px;
 }
 
-.vk:hover ,li.facebook:hover ,li.instagram:hover {
+.vk:hover,
+.facebook:hover,
+.instagram:hover {
   background-color: #e74246;
 }
 
-.vk:active ,li.facebook:active ,li.instagram:active {
+.vk:active,
+.facebook:active,
+.instagram:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
 
-.vk a:active::before, li.facebook a:active::before, li.instagram a:active::before  {
+.vk a:active::before,
+.facebook a:active::before,
+.instagram a:active::before  {
   opacity: 0.3;
 }
 
@@ -1500,7 +1485,7 @@ ul.line-items li::before {
   width: 398px;
 }
 
-.social-items li a {
+.social-items a {
   display: block;
   width: 100px;
   height: 100px;
@@ -1542,7 +1527,8 @@ ul.line-items li::before {
   color: #444444;
 }
 
-.footer-text-sm, .footer-text-l  {
+.footer-text-sm,
+.footer-text-l  {
   margin: 0;
   padding: 0;
 }
@@ -1660,21 +1646,29 @@ ul.line-items li::before {
   display: block;
 }
 
-.form-field input[type="text"],input[type="email"],textarea {
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   padding: 15px;
 }
 
-.form-field input[type="text"]:hover, .form-field input[type="email"]:hover, .form-field textarea:hover {
+.form-field input[type="text"]:hover,
+.form-field input[type="email"]:hover,
+.form-field textarea:hover {
   border: 2px solid #b4b9bb;
 }
 
-.form-field input[type="text"]:focus, .form-field input[type="email"]:focus, .form-field textarea:focus {
+.form-field input[type="text"]:focus,
+.form-field input[type="email"]:focus,
+.form-field textarea:focus {
   border: 2px solid #000000;
 }
 
-.empty, .form-field input[type="text"].empty, .form-field input[type="email"].empty {
+.empty,
+.form-field input[type="text"].empty,
+.form-field input[type="email"].empty {
   border: 2px solid #e74246;
 }
 
