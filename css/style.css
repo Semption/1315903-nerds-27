@@ -195,8 +195,8 @@ html {
   margin-right: 0;
 }
 
-.catalog-grid li.catalog-item:nth-last-child(1),
-.catalog-grid li.catalog-item:nth-last-child(2) {
+.catalog-grid .catalog-item:nth-last-child(1),
+.catalog-grid .catalog-item:nth-last-child(2) {
   margin-bottom: 0;
 }
 
@@ -642,7 +642,7 @@ html {
   margin-right: 11px;
 }
 
-.template-info a.button-price {
+.template-info .button-price {
   color: #ffffff;
   display: inline-block;
   vertical-align: middle;
@@ -836,7 +836,7 @@ html {
   color: rgb(0, 0, 0);
 }
 
-.up.active-point a::before {
+.sort-variant .active-point::before {
   opacity: 1;
 }
 
@@ -1021,7 +1021,7 @@ html {
   margin-top: 24px;
 }
 
-ul.line-items li::before {
+.line-items li::before {
   content: "";
   width: 25px;
   height: 10px;
@@ -1042,7 +1042,7 @@ ul.line-items li::before {
   display: none;
 }
 
-.template-info h3, p {
+.template-info h3 {
   margin: 0;
   padding: 0;
 }
@@ -1054,7 +1054,7 @@ ul.line-items li::before {
   margin-top: 16px;
 }
 
-.template-info h3 a {
+.template-link {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
@@ -1064,15 +1064,15 @@ ul.line-items li::before {
   word-break: break-all;
 }
 
-.template-info h3 a:hover {
+.template-link:hover {
  color: #fb565a;
 }
 
-.template-info h3 a:active {
+.template-link:active {
  color: rgba(0, 0, 0, 0.3);
 }
 
-.template-info a.button-price  {
+.template-info .button-price  {
   margin-top: 29px;
   margin-bottom: 15px
 }
@@ -1119,7 +1119,6 @@ ul.line-items li::before {
 .brand-items img:active {
   opacity: 0.1;
 }
-
 
 .brand-items li {
   display: flex;
@@ -1270,15 +1269,15 @@ ul.line-items li::before {
   margin-bottom: 64px;
 }
 
-.brand-items li a {
+.brand-link {
   margin-top: 9px;
 }
 
-.brand-items li:nth-child(4n-3) a {
+.brand-items li:nth-child(4n-3) .brand-link  {
   margin-top: 18px;
 }
 
-.brand-items li:nth-child(4n) a {
+.brand-items li:nth-child(4n) {
   margin-top: 15px;
 }
 
@@ -1668,7 +1667,8 @@ ul.line-items li::before {
 
 .empty,
 .form-field input[type="text"].empty,
-.form-field input[type="email"].empty {
+.form-field input[type="email"].empty,
+.form-field textarea.empty {
   border: 2px solid #e74246;
 }
 
