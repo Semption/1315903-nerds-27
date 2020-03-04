@@ -368,15 +368,15 @@ html {
   top: 5px;
 }
 
-#banner-1:checked ~ .slider-controls label[for="banner-1"] .dots-circle,
-#banner-2:checked ~ .slider-controls label[for="banner-2"] .dots-circle,
-#banner-3:checked ~ .slider-controls label[for="banner-3"] .dots-circle {
+.banner-1:checked ~ .slider-controls label[for="banner-1"] .dots-circle,
+.banner-2:checked ~ .slider-controls label[for="banner-2"] .dots-circle,
+.banner-3:checked ~ .slider-controls label[for="banner-3"] .dots-circle {
   display: block;
 }
 
-#banner-1:checked ~ .slider-list #slide-1,
-#banner-2:checked ~ .slider-list #slide-2,
-#banner-3:checked ~ .slider-list #slide-3 {
+.banner-1:checked ~ .slider-list #slide-1,
+.banner-2:checked ~ .slider-list #slide-2,
+.banner-3:checked ~ .slider-list #slide-3 {
   display: block;
 }
 
