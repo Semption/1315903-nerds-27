@@ -1273,7 +1273,7 @@ html {
   margin-top: 9px;
 }
 
-.brand-items li:nth-child(4n-3) .brand-link  {
+.brand-items .brand-link-first  {
   margin-top: 18px;
 }
 
